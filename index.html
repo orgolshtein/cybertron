@@ -9,27 +9,27 @@
     <title>User Form</title>
 </head>
 <body>
-    <form action="">
+    <form action="" method="post">
         <fieldset>
             <legend>User Details:</legend>
             <div class="part1">
                 <p>
                     <label for="userFirstName" >First Name:</label><br>
-                    <input type="text" name="first-name" id="userFirstName">
+                    <input type="text" name="first-name" required id="userFirstName">
                 </p>
                 <p>
                     <label for="userLastName" >Last Name:</label><br>
-                    <input type="text" name="last-name" id="userLastName">
+                    <input type="text" name="last-name" required id="userLastName">
                 </p>
             </div>
             <div class="part1">
                 <p>
                     <label for="userEmail" >Email:</label><br>
-                    <input type="email" name="email" id="userEmail">
+                    <input type="email" name="email" required id="userEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                 </p>
                 <p>
                     <label for="userPhone" >Phone Number:</label><br>
-                    <input type="text" name="phone-number" id="userPhone">
+                    <input type="tel" name="phone-number" id="userPhone" pattern="[0-9]{9,10}">
                 </p>
             </div>
         </fieldset>
