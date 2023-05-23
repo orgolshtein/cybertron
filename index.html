@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>User Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>User Details:</legend>
+            <div class="part1">
+                <p>
+                    <label for="userFirstName" >First Name:</label><br>
+                    <input type="text" name="first-name" id="userFirstName">
+                </p>
+                <p>
+                    <label for="userLastName" >Last Name:</label><br>
+                    <input type="text" name="last-name" id="userLastName">
+                </p>
+            </div>
+            <div class="part1">
+                <p>
+                    <label for="userEmail" >Email:</label><br>
+                    <input type="email" name="email" id="userEmail">
+                </p>
+                <p>
+                    <label for="userPhone" >Phone Number:</label><br>
+                    <input type="text" name="phone-number" id="userPhone">
+                </p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Details:</legend>
+            <div class="part2">
+                <label for="userJob">Profession:</label><br>
+                <select id="userJob" name="profession">
+                    <option value="default">&nbsp;&nbsp;- Select -</option>
+                    <option value="developer">&nbsp;&nbsp;Developer</option>
+                    <option value="marketing">&nbsp;&nbsp;Marketing Manager</option>
+                    <option value="social">&nbsp;&nbsp;Social Worker</option>
+                    <option value="none">&nbsp;&nbsp;None of the above</option>
+                </select>
+            </div>
+            <div class="part2">
+                <label for="userComments" >Comments:</label><br>
+                <textarea name="comments" id="userComments" rows="3"> </textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="part3">
+                <button type="reset">reset form</button>
+                <button type="submit">send</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
